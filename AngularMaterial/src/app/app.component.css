@@ -1,0 +1,15 @@
+/*:host {
+  max-width: 1280px;
+  text-align: center;
+}
+*/
+
+p {
+  font-family: Lato;
+}
+
+.main_content {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background: #efefef;
+}

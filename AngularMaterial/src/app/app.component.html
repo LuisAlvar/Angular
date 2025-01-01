@@ -1,0 +1,18 @@
+<div>
+  <app-custom-header [sidenav]="leftSidenav"></app-custom-header>
+
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #leftSidenav mode="side" opened>
+      <app-custom-sidenav></app-custom-sidenav>
+    </mat-sidenav>
+    <mat-sidenav-content [@onMainContentChange]="onSidenavChange ? 'open': 'close'">
+      <div class="main_content">
+        <div style="padding: 40px">
+          Your content
+          <app-grid-list></app-grid-list>
+        </div>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+</div>
